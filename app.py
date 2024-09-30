@@ -1,28 +1,28 @@
 from flask import Flask, render_template, url_for, flash, redirect, request
 from flask_mail import Mail, Message
-import os
+
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Ensure you set a secret key for flashing messages
+app.secret_key = '1234'  
 
 # Configure Flask-Mail
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'punitsinha495@gmail.com'  # Replace with your Gmail address
-app.config['MAIL_PASSWORD'] = 'yhih rgyj nkkl sunj'  # Use App-specific password generated from Gmail
+app.config['MAIL_USERNAME'] = 'punitsinha495@gmail.com'  
+app.config['MAIL_PASSWORD'] = 'yhih rgyj nkkl sunj'  
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
 mail = Mail(app)
 
-# Dummy data for shoes
+
 shoes = [
     {
         "id": 1,
         "name": "Airforce1",
         "description": "Taking height and craft to new levels, the Nike Air Force 1 Sage Low re-imagines classic hoops styleby and for women.A clean leather upper is easy to style.The sculpted collar reduces hot spots.And its platform midsole adds unflinching boldness because we know: you're not just in the game, you're leading it.",
         "price": "1,600",
-        "images": ["Af 1 1600.JPG", "Af1.JPG", "Af11600.JPG"]  # Add multiple images
+        "images": ["Af 1 1600.JPG", "Af1.JPG", "Af11600.JPG"]  
     },
     {
         "id": 2,
@@ -67,14 +67,14 @@ def home():
 
 @app.route('/product/<int:product_id>')
 def product(product_id):
-    # Retrieve the product from the list using the product_id
+    
     product = next((shoe for shoe in shoes if shoe['id'] == product_id), None)
 
-    # Check if the product exists, otherwise return a 404 page
+    
     if product is None:
         return "Product not found", 404
 
-    # Pass the product to the template
+    
     return render_template('product.html', product=product)
 
 @app.route('/contact', methods=['GET', 'POST'])
@@ -83,10 +83,10 @@ def contact():
         email = request.form['email']
         message = request.form['message']
 
-        # Send email to your inbox
+    
         msg = Message('New Contact Message from LazeUp',
                       sender=email,
-                      recipients=['punitsinha495@gmail.com'])  # Your email to receive messages
+                      recipients=['punitsinha495@gmail.com'])  
         msg.body = f"Message from {email}:\n\n{message}"
         
         try:

@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link Bootstrap CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Link to main.css in the static folder -->
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 
     <title>{% block title %}LazeUp{% endblock %}</title>
 </head>
 <body>
 
-      <!-- Simple Navbar -->
+      
       <nav class="navbar navbar-expand-lg navbar-light bg-light mb-0">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,21 +40,21 @@
     </nav>
 
 
-    <!-- Header with Logo -->
+    
     <div class="header-logo text-center mb-2" style="background-color: rgb(219, 217, 217);">
         <img src="{{ url_for('static', filename='logo.png') }}" alt="LazeUp Logo" style="height: 200px; width: auto;">
     </div>
 
 
 
-    <!-- Main content -->
+    
     <div id="main" class="container mt-4">
         <main>
             {% block content %}{% endblock %}
         </main>
     </div>
 
-    <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
