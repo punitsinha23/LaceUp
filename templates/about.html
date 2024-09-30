@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Lace Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+    {% include 'base.html' %}
+
+    <div class="container ">
+        <h1 class="text-center mb-4" style="font-weight: bold;">About Us</h1>
+        <p class="text-center">Welcome to Lace Up, your number one source for branded shoes at affordable prices. We’re dedicated to giving you the very best of footwear, with a focus on dependability, customer service, and uniqueness.</p>
+        
+        <p class="text-center">Our passion for quality footwear drove us to do intense research, so that Lace Up can offer you the most fashionable shoes at unbeatable prices. We now serve customers all over india and are thrilled to be a part of the eco-friendly wing of the footwear industry.</p>
+
+        <h2 class="mt-4">Our Mission</h2>
+        <p>Our mission is to provide our customers with the best shopping experience possible. We believe that stylish and high-quality shoes shouldn’t come with a high price tag. That’s why we offer a wide range of options, catering to all tastes and budgets.</p>
+
+        <h2 class="mt-4">Why Choose Us?</h2>
+        <ul>
+            <li>Branded Quality: We stock only the best brands that are renowned for their quality and style.</li>
+            <li>Affordability: Our prices are competitive, ensuring that you can get the shoes you love without breaking the bank.</li>
+            <li>Customer Satisfaction: We prioritize our customers and strive to ensure you are happy with your purchase.</li>
+            <li>Wide Selection: Whether you're looking for sneakers, sandals, or formal shoes, we have something for everyone.</li>
+        </ul>
+
+        <h2 class="mt-4">Get in Touch</h2>
+        <p>If you have any questions, feel free to <a href="{{ url_for('contact') }}">contact us</a>. We are always here to help!</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>

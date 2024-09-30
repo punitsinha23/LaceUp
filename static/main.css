@@ -1,0 +1,95 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set basic body styles */
+body {
+    font-family: Arial, sans-serif; /* Change font to a readable type */
+    background-color: #dddddd; /* Set body background to white */
+    color: #000000; /* Set text color to black */
+}
+
+/* Header styles */
+header h1 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    color: #000000; /* Set the title color to black */
+}
+
+/* Navbar styles */
+.navbar {
+    margin-bottom: 1rem; /* Space below navbar */
+    background-color: #f8f9fa; /* Light grey background for the navbar */
+}
+
+.navbar-brand {
+    font-size: 1.2rem; /* Increase font size for navbar items */
+    color: #000000; /* Set navbar text to black */
+}
+
+/* Main content styles */
+main {
+    padding: 2rem 0; /* Add padding to the main content */
+}
+
+h2 {
+    font-size: 2rem; /* Size for section headings */
+    margin-bottom: 1rem; /* Space below section headings */
+    color: #000000; /* Set section heading color to black */
+}
+
+/* Card styles for product display */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s; /* Add transition for hover effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 0.25rem; /* Add rounded corners to the card */
+    border: 1px solid #dee2e6; /* Light grey border around the card */
+    background-color: #fcf4f4;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.card-body h5 {
+    color: #000000; /* Set card title color to black */
+}
+
+.card-body p {
+    color: #333333; /* Slightly lighter color for card text */
+}
+
+/* Footer styles */
+footer {
+    background-color: #f8f9fa; /* Light grey background for footer */
+    color: #000000; /* Black text for footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0; /* Add padding to the footer */
+    text-align: center; /* Center align footer text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Smaller title on smaller screens */
+    }
+
+    .navbar-brand {
+        font-size: 1rem; /* Smaller navbar items on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller section headings */
+    }
+}
+
+/* Light border class */
+.light-border {
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle grey border */
+    border-radius: 0.25rem; /* Optional: add some rounding to the corners */
+}
