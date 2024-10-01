@@ -58,7 +58,7 @@ shoes = [
         "description": "This is a description for shoe 6.",
         "price": "2,100",
         "images": ["s-l1600.webp", "/s-l960 (1).webp", "s-l960 (2).webp", "s-l960.webp"]
-    }
+    },
     {
         "id": 7,
         "name": "Jordan 1 low bred toe",
