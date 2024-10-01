@@ -49,15 +49,22 @@ shoes = [
         "id": 5,
         "name": "Jordan 1 High Spider-Man",
         "description": "This is a description for shoe 5.",
-        "price": "2,000",
+        "price": "2,100",
         "images": ["Spider 2100.JPG", "pinterestdownloader.com-1727612213.688505.jpg", "pinterestdownloader.com-1727612257.836546.jpg"]
     },
     {
         "id": 6,
         "name": "Jordan 1 Retro High University Blue",
         "description": "This is a description for shoe 6.",
-        "price": "2,000",
+        "price": "2,100",
         "images": ["s-l1600.webp", "/s-l960 (1).webp", "s-l960 (2).webp", "s-l960.webp"]
+    }
+    {
+        "id": 7,
+        "name": "Jordan 1 low bred toe",
+        "description": "This is a description for shoe 6.",
+        "price": "2,100",
+        "images": ["IMG_9201.JPG", "IMG_9202.JPG", 'IMG_9203.JPG', 'IMG_9204.JPG']
     }
 ]
 
