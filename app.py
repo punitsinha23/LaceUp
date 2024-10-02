@@ -21,14 +21,14 @@ shoes = [
         "id": 1,
         "name": "Airforce1",
         "description": "Taking height and craft to new levels, the Nike Air Force 1 Sage Low re-imagines classic hoops styleby and for women.A clean leather upper is easy to style.The sculpted collar reduces hot spots.And its platform midsole adds unflinching boldness because we know: you're not just in the game, you're leading it.",
-        "price": "1,600",
+        "price": "1,699",
         "images": ["Af 1 1600.JPG", "Af1.JPG", "Af11600.JPG"]  
     },
     {
         "id": 2,
         "name": "Dunk Low Retro Unisex Shoes",
         "description": "Step into timeless style with the Dunk Low Retro Unisex Shoes. These classic sneakers offer a perfect blend of heritage design and modern comfort, making them ideal for any occasion. Featuring a low-profile silhouette, they are crafted with premium leather and durable materials to ensure long-lasting wear. The padded collar and tongue provide extra cushioning for all-day comfort, while the perforated toe box enhances breathability. With a versatile colorway, these shoes effortlessly complement any outfit, whether you’re hitting the streets or hanging out with friends. The iconic Swoosh and retro-inspired details complete the look, giving you a piece of sneaker history in every step.",
-        "price": "2,000",
+        "price": "2,100",
         "images": ["Dunk panda 2000.WEBP", "Dunk panda 2000 2.WEBP"]
     },
     {
