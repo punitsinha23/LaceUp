@@ -27,42 +27,42 @@ shoes = [
     {
         "id": 2,
         "name": "Dunk Low Retro Unisex Shoes",
-        "description": "This is a description for shoe 2.",
+        "description": "Step into timeless style with the Dunk Low Retro Unisex Shoes. These classic sneakers offer a perfect blend of heritage design and modern comfort, making them ideal for any occasion. Featuring a low-profile silhouette, they are crafted with premium leather and durable materials to ensure long-lasting wear. The padded collar and tongue provide extra cushioning for all-day comfort, while the perforated toe box enhances breathability. With a versatile colorway, these shoes effortlessly complement any outfit, whether you’re hitting the streets or hanging out with friends. The iconic Swoosh and retro-inspired details complete the look, giving you a piece of sneaker history in every step.",
         "price": "2,000",
         "images": ["Dunk panda 2000.WEBP", "Dunk panda 2000 2.WEBP"]
     },
     {
         "id": 3,
         "name": "Jordan Air",
-        "description": "This is a description for shoe 3.",
+        "description": "The Jordan Air series is a symbol of performance, style, and innovation, combining iconic design with cutting-edge technology. Crafted for those who seek both fashion and function, these shoes offer superior cushioning with the signature Air-Sole unit, delivering unparalleled comfort and impact protection. The upper materials vary across models, ranging from premium leather to breathable mesh, ensuring a perfect fit for any lifestyle. The Jordan Air features bold designs, often showcasing the iconic Jumpman logo and other heritage details that pay tribute to the basketball legend Michael Jordan. With sleek lines, eye-catching colorways, and the latest performance features, these shoes are perfect for athletes, sneakerheads, and anyone looking to elevate their streetwear game. Whether you’re on the court or off, the Jordan Air Shoes deliver lasting comfort and timeless appeal.",
         "price": "2,000",
         "images": ["jordan-air-jordan-1-retro-high-og-chicago-lost-and-found_18316489_45637604_1000.webp", "jordan-air-jordan-1-retro-high-og-chicago-lost-and-found_18316489_45638485_1000.webp", "jordan-air-jordan-1-retro-high-og-chicago-lost-and-found_18316489_45638492_1000.webp", "jordan-air-jordan-1-retro-high-og-chicago-lost-and-found_18316489_45638527_1000.webp"]
     },
     {
         "id": 4,
         "name": "Converse Black",
-        "description": "This is a description for shoe 4.",
+        "description": "The Converse Black Shoes offer a timeless and versatile design, perfect for everyday wear. Crafted with a durable canvas upper, these shoes provide a snug, comfortable fit while maintaining breathability. The signature white rubber toe cap and vulcanized rubber sole offer durability and iconic Converse style, ensuring grip and traction. With their sleek, minimalist black color, these shoes effortlessly complement any outfit, making them ideal for casual outings, skateboarding, or adding a touch of laid-back cool to your look. The high-quality stitching and metal eyelets enhance both durability and design, giving them a classic yet edgy appeal",
         "price": "1,000",
         "images": ["metro-fusion-converse-chuck-taylor-all-star-hi-top-black-3-5-m-5-5-w-m9160-shoes-948_1400x1400.webp"]
     },
     {
         "id": 5,
         "name": "Jordan 1 High Spider-Man",
-        "description": "This is a description for shoe 5.",
+        "description": "The Air Jordan 1 High Spider-Man is a striking tribute to the superhero world, blending the iconic design of the Jordan 1 with details inspired by Spider-Man’s universe. With a bold mix of red, black, and white on the premium leather upper, these sneakers pay homage to Spider-Man's classic suit. Unique spotted patterns on the red overlays mimic the comic book-style webbing, while the translucent icy blue outsole adds a modern twist. Complete with the signature Nike Air branding and the iconic Wings logo on the collar, the Air Jordan 1 Spider-Man delivers both style and performance, capturing the essence of a hero’s journey while staying true to its basketball heritage. These kicks are perfect for collectors, sneaker enthusiasts, and Spider-Man fans alike.",
         "price": "2,100",
         "images": ["Spider 2100.JPG", "pinterestdownloader.com-1727612213.688505.jpg", "pinterestdownloader.com-1727612257.836546.jpg"]
     },
     {
         "id": 6,
         "name": "Jordan 1 Retro High University Blue",
-        "description": "This is a description for shoe 6.",
+        "description": "The Air Jordan 1 Retro High University Blue brings a fresh and vibrant take on the classic silhouette with a nod to Michael Jordan’s college roots. Crafted with premium leather and soft suede, this pair features the iconic University Blue overlays, paired with black accents on the Swoosh, collar, and laces for a bold contrast. The crisp white leather base complements the light blue tones, creating a clean and sleek look. Equipped with Nike Air cushioning for all-day comfort and support, these sneakers are a perfect blend of performance and style. The timeless Air Jordan Wings logo and Nike branding finish off the design, making the University Blue a must-have for collectors and fans of the Air Jordan legacy.",
         "price": "2,100",
         "images": ["s-l1600.webp", "/s-l960 (1).webp", "s-l960 (2).webp", "s-l960.webp"]
     },
     {
         "id": 7,
         "name": "Jordan 1 low bred toe",
-        "description": "This is a description for shoe 6.",
+        "description": "The Air Jordan 1 Low Bred Toe combines the classic Jordan silhouette with the iconic Bred colorway for a fresh, low-top look. Featuring a premium leather upper, the sneaker boasts bold black panels, rich varsity red accents on the toe box and heel, and crisp white side panels, creating a timeless contrast. The low-cut design offers a more casual, versatile wear, while the Air-cushioned sole ensures all-day comfort and support. Complete with the iconic Nike Swoosh, Jumpman logo on the tongue, and the Wings logo on the heel, these sneakers bring together style, heritage, and performance. Perfect for those who want a blend of athletic functionality and street-ready aesthetics, the Bred Toe is a must-have for sneakerheads and Jordan fans.",
         "price": "2,100",
         "images": ["IMG_9201.JPG", "IMG_9202.JPG", 'IMG_9203.JPG', 'IMG_9204.JPG']
     }
