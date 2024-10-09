@@ -6,14 +6,14 @@ Featured Shoes - LazeUp
 
 {% block content %}
 <style>
-    
+    /* Styling the card image */
     .card-img-top {
         width: 100%; 
         height: 200px; 
         object-fit: cover; 
     }
 
-    
+    /* Styling the card body */
     .card-body {
         display: flex;
         justify-content: space-between;
@@ -21,15 +21,29 @@ Featured Shoes - LazeUp
         margin-bottom: 10px;
     }
 
+    /* Bold card title */
     .card-title {
         font-weight: bold;
         margin: 0;
     }
 
+    /* Price styling */
     .price {
         color: rgb(250, 10, 10);
         font-weight: bold;
         font-size: 18px;
+    }
+
+    /* Card hover effect */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Hover effect - blue glowing outline and scale up */
+    .card:hover {
+        transform: scale(1.05);  /* Slight scale-up on hover */
+        box-shadow: 0 0 10px 3px rgba(0, 123, 255, 0.7);  /* Blue outline/glow */
+        border-color: rgba(0, 123, 255, 0.7);  /* Optional: border color change */
     }
 </style>
 
@@ -43,7 +57,7 @@ Featured Shoes - LazeUp
                 <span class="card-title">{{ shoe.name }}</span>
                 <span class="price">₹{{ shoe.price }}</span>
             </div>
-            <a href="{{ url_for('product', product_id=shoe.id) }}" class="btn btn-primary">View Product</a>
+            <a href="{{ url_for('product', product_id=shoe.id) }}" class="btn btn-primary" style="font-weight: bold;">View Product</a>
         </div>
     </div>
     {% endfor %}

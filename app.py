@@ -65,6 +65,20 @@ shoes = [
         "description": "The Air Jordan 1 Low Bred Toe combines the classic Jordan silhouette with the iconic Bred colorway for a fresh, low-top look. Featuring a premium leather upper, the sneaker boasts bold black panels, rich varsity red accents on the toe box and heel, and crisp white side panels, creating a timeless contrast. The low-cut design offers a more casual, versatile wear, while the Air-cushioned sole ensures all-day comfort and support. Complete with the iconic Nike Swoosh, Jumpman logo on the tongue, and the Wings logo on the heel, these sneakers bring together style, heritage, and performance. Perfect for those who want a blend of athletic functionality and street-ready aesthetics, the Bred Toe is a must-have for sneakerheads and Jordan fans.",
         "price": "2,100",
         "images": ["IMG_9201.JPG", "IMG_9202.JPG", 'IMG_9203.JPG', 'IMG_9204.JPG']
+    },
+     {
+        "id": 8,
+        "name": "Air Jordan 1 Low Voodoo",
+        "description": "The Air Jordan 1 Low Voodoo is a distinctive take on the classic sneaker, featuring an earthy color palette of browns, beiges, and olives, complemented by a mix of suede, canvas, and twill materials. With its asymmetrical design and patchwork feel, the shoe embraces a handcrafted aesthetic, drawing inspiration from voodoo culture. Unique details like exposed stitching and mismatched elements on each shoe add to its eclectic, mystical vibe, making it a standout piece in the Jordan lineup. The design blends modern streetwear with a rustic, symbolic theme for a bold, artistic look.",
+        "price": "2,300",
+        "images": ["1.png", "2.png" , "3.png" ,  "4.png"]
+    }, 
+    {
+        "id": 9,
+        "name": "Jordan 1  Travis Scott",
+        "description": "The Air Jordan 1 Travis Scott is a standout collaboration between Nike and the rapper Travis Scott, featuring a unique reverse Swoosh design and an earthy color palette of brown, black, and white with sail accents. Crafted from premium nubuck and leather, the shoe combines luxury with durability, while hidden pockets around the ankle collar add a rugged touch. Signature Cactus Jack branding appears on the tongue and heel, enhancing its exclusivity. This fusion of bold design elements and iconic Jordan style has made it a must-have for both sneaker collectors and Travis Scott fans.",
+        "price": "2,300",
+        "images": [ "shoes store (2).png", "shoes store (1).png", "shoes store.png", "trscxaijo1rehiogmo_photo4.jpeg" ]
     }
 ]
 
