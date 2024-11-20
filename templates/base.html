@@ -1,61 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-
     <title>{% block title %}LazeUp{% endblock %}</title>
 </head>
-<body>
 
-      
-      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-0">
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-0">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('contact')}}">Messages</a>
+                        <a class="nav-link" href="{{ url_for('contact')}}">Messages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('contact')}}">contact Us</a>
+                        <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('about')}}">About Us</a>
+                        <a class="nav-link" href="{{ url_for('about') }}">About Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-    
-    <div class="header-logo text-center mb-2" style="background-color: rgb(219, 217, 217);">
-        <img src="{{ url_for('static', filename='logo.png') }}" alt="LazeUp Logo" style="height: 200px; width: auto;">
+    <!-- Header Logo -->
+    <div class="header-logo text-center mb-4">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="LazeUp Logo" class="img-fluid">
     </div>
 
-
-
-    
+    <!-- Main Content -->
     <div id="main" class="container mt-4">
         <main>
             {% block content %}{% endblock %}
         </main>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
 
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/yourprofile"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="http://wa.me/917428691894"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/lace__upppp?igsh=ajY1c2NzMzU4YjI0&utm_source=qr"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="{{url_for('home')}}">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="{{url_for('about')}}">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="{{url_for('contact')}}">Contact</a></li>
+        </ul>
+
+        <p>&copy; 2024 Lace up | All Rights Reserved</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
+
 </html>

@@ -3,93 +3,167 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-/* Set basic body styles */
+/* Body styles */
 body {
-    font-family: Arial, sans-serif; /* Change font to a readable type */
-    background-color: #dddddd; /* Set body background to white */
-    color: #000000; /* Set text color to black */
-}
-
-/* Header styles */
-header h1 {
-    font-size: 2.5rem; /* Larger font size for the title */
-    color: #000000; /* Set the title color to black */
+    background-color: rgb(177, 177, 247);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Navbar styles */
 .navbar {
-    margin-bottom: 1rem; /* Space below navbar */
-    background-color: #f8f9fa; /* Light grey background for the navbar */
+    margin-bottom: 1rem;
+    background-color: #f8f9fa;
 }
 
 .navbar-brand {
-    font-size: 1.2rem; /* Increase font size for navbar items */
-    color: #000000; /* Set navbar text to black */
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/* Header Logo Styles */
+.header-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color:rgb(149, 149, 246);
+}
+
+.header-logo img {
+    height: 200px;
+    width: auto;
 }
 
 /* Main content styles */
 main {
-    padding: 2rem 0; /* Add padding to the main content */
-}
-
-h2 {
-    font-size: 2rem; /* Size for section headings */
-    margin-bottom: 1rem; /* Space below section headings */
-    color: #000000; /* Set section heading color to black */
-}
-
-/* Card styles for product display */
-.card {
-    transition: transform 0.2s, box-shadow 0.2s; /* Add transition for hover effect */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 0.25rem; /* Add rounded corners to the card */
-    border: 1px solid #dee2e6; /* Light grey border around the card */
-    background-color: #fcf4f4;
-}
-
-.card:hover {
-    transform: scale(1.05); /* Slightly enlarge card on hover */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-}
-
-.card-body h5 {
-    color: #000000; /* Set card title color to black */
-}
-
-.card-body p {
-    color: #333333; /* Slightly lighter color for card text */
+    padding: 2rem 0;
+    flex: 1; /* Allow main to grow and fill available space */
 }
 
 /* Footer styles */
 footer {
-    background-color: #f8f9fa; /* Light grey background for footer */
-    color: #000000; /* Black text for footer */
+    background-color: #3586ff;
+    color: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: relative;
-    bottom: 0;
     width: 100%;
-    padding: 1rem 0; /* Add padding to the footer */
-    text-align: center; /* Center align footer text */
+    margin-top: 8%;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem; /* Smaller title on smaller screens */
-    }
-
-    .navbar-brand {
-        font-size: 1rem; /* Smaller navbar items on smaller screens */
-    }
-
-    h2 {
-        font-size: 1.5rem; /* Smaller section headings */
-    }
+footer p {
+    margin: 15px 0;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
-/* Light border class */
-.light-border {
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle grey border */
-    border-radius: 0.25rem; /* Optional: add some rounding to the corners */
+/* Social and menu items in footer */
+.social-icon,
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
 }
+
+.social-icon__item,
+.menu__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: opacity 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+/*wavs*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+
+
