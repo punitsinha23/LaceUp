@@ -8,7 +8,7 @@
 
 /* Body styles */
 body {
-    background-color: rgb(177, 177, 247);
+    background-color: rgb(0, 0, 0);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@ body {
 /* Navbar styles */
 .navbar {
     margin-bottom: 1rem;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
 }
 
 .navbar-brand {
@@ -29,8 +29,8 @@ body {
 /* Header Logo Styles */
 .header-logo {
     text-align: center;
-    margin-bottom: 2rem;
-    background-color:rgb(149, 149, 246);
+    margin-bottom: 1rem;
+    background-color:rgb(251, 251, 251);
 }
 
 .header-logo img {
@@ -106,64 +106,7 @@ footer p {
     opacity: 1;
 }
 
-/*wavs*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-.wave {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url("https://i.ibb.co/wQZVxxk/wave.png");
-  background-size: 1000px 100px;
-}
-
-.wave#wave1 {
-  z-index: 1000;
-  opacity: 1;
-  bottom: 0;
-  animation: animateWaves 4s linear infinite;
-}
-
-.wave#wave2 {
-  z-index: 999;
-  opacity: 0.5;
-  bottom: 10px;
-  animation: animate 4s linear infinite !important;
-}
-
-.wave#wave3 {
-  z-index: 1000;
-  opacity: 0.2;
-  bottom: 15px;
-  animation: animateWaves 3s linear infinite;
-}
-
-.wave#wave4 {
-  z-index: 999;
-  opacity: 0.7;
-  bottom: 20px;
-  animation: animate 3s linear infinite;
-}
-
-@keyframes animateWaves {
-  0% {
-    background-position-x: 1000px;
-  }
-  100% {
-    background-positon-x: 0px;
-  }
-}
-
-@keyframes animate {
-  0% {
-    background-position-x: -1000px;
-  }
-  100% {
-    background-positon-x: 0px;
-  }
-}
 
 
 
